@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hari Laxmi Jewellers - Admin</title>
+
+<style>
+
+/* =====================================================
+   PREMIUM WHITE + BLUSH PINK ADMIN
+===================================================== */
+
+:root{
+  --pink:#e9a8ba;
+  --pink-light:#f8dce4;
+  --pink-soft:#fff2f6;
+  --pink-dark:#c77d95;
+
+  --black:#151214;
+  --black-soft:#282226;
+
+  --white:#ffffff;
+  --cream:#fffafb;
+
+  --text:#292326;
+  --muted:#776d72;
+
+  --border:#efd7df;
+
+  --green:#1d8a50;
+  --red:#b8324b;
+}
+
+
+*{
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  margin:0;
+
+  font-family:
+  Arial,
+  Helvetica,
+  sans-serif;
+
+  background:
+  radial-gradient(
+    circle at 50% -10%,
+    rgba(233,168,186,.22),
+    transparent 35%
+  ),
+
+  linear-gradient(
+    180deg,
+    #ffffff,
+    #fff8fa
+  );
+
+  color:var(--text);
+
+  min-height:100vh;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container{
+
+  max-width:1050px;
+
+  margin:auto;
+
+  padding:
+  25px 18px 60px;
+}
+
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+h1{
+
+  text-align:center;
+
+  color:var(--black);
+
+  margin:
+  5px 0;
+
+  font-size:
+  clamp(23px,5vw,34px);
+
+  letter-spacing:
+  1px;
+}
+
+
+h2{
+
+  margin-top:0;
+
+  color:var(--black);
+
+  font-size:21px;
+}
+
+
+.subtitle{
+
+  text-align:center;
+
+  color:var(--pink-dark);
+
+  margin-bottom:25px;
+
+  font-size:10px;
+
+  font-weight:bold;
+
+  letter-spacing:3px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card{
+
+  background:
+  rgba(255,255,255,.92);
+
+  border:
+  1px solid var(--border);
+
+  border-radius:22px;
+
+  padding:22px;
+
+  margin-bottom:20px;
+
+  box-shadow:
+  0 12px 35px
+  rgba(55,20,30,.07);
+}
+
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+.loginBox{
+
+  max-width:440px;
+
+  margin:
+  70px auto;
+}
+
+
+.loginBox::before{
+
+  content:"925 SILVER JEWELLERY";
+
+  display:block;
+
+  text-align:center;
+
+  color:var(--pink-dark);
+
+  font-size:9px;
+
+  font-weight:bold;
+
+  letter-spacing:4px;
+
+  margin-bottom:15px;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+input,
+select,
+textarea{
+
+  width:100%;
+
+  padding:14px;
+
+  margin:
+  7px 0 14px;
+
+  border-radius:12px;
+
+  border:
+  1px solid var(--border);
+
+  background:
+  #fff;
+
+  color:var(--text);
+
+  font-size:14px;
+
+  outline:none;
+
+  transition:.2s;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+  border-color:var(--pink);
+
+  box-shadow:
+  0 0 0 4px
+  rgba(233,168,186,.13);
+}
+
+
+input::placeholder,
+textarea::placeholder{
+
+  color:#aaa0a4;
+}
+
+
+textarea{
+
+  min-height:100px;
+
+  resize:vertical;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+button{
+
+  border:0;
+
+  border-radius:12px;
+
+  padding:
+  12px 18px;
+
+  font-size:13px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  margin:
+  5px 4px 5px 0;
+
+  transition:
+  transform .2s,
+  box-shadow .2s,
+  background .2s;
+}
+
+
+button:hover{
+
+  transform:translateY(-1px);
+}
+
+
+button:disabled{
+
+  opacity:.6;
+
+  cursor:not-allowed;
+
+  transform:none;
+}
+
+
+.primary{
+
+  background:
+  var(--black);
+
+  color:#fff;
+
+  box-shadow:
+  0 7px 20px
+  rgba(0,0,0,.10);
+}
+
+
+.primary:hover{
+
+  background:
+  var(--pink-dark);
+
+  box-shadow:
+  0 8px 22px
+  rgba(199,125,149,.20);
+}
+
+
+.secondary{
+
+  background:
+  var(--pink-soft);
+
+  color:
+  var(--black);
+
+  border:
+  1px solid var(--border);
+}
+
+
+.secondary:hover{
+
+  background:
+  var(--pink-light);
+}
+
+
+.danger{
+
+  background:
+  #fff0f3;
+
+  color:
+  var(--red);
+
+  border:
+  1px solid #f0c8d1;
+}
+
+
+.danger:hover{
+
+  background:
+  #fce0e7;
+}
+
+
+.logout{
+
+  background:
+  var(--black);
+
+  color:#fff;
+
+  float:right;
+
+  padding:
+  10px 15px;
+
+  border-radius:20px;
+}
+
+
+/* =====================================================
+   HIDDEN
+===================================================== */
+
+.hidden{
+  display:none !important;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.message{
+
+  padding:13px;
+
+  border-radius:12px;
+
+  margin-bottom:15px;
+
+  display:none;
+
+  font-size:13px;
+
+  font-weight:bold;
+}
+
+
+.success{
+
+  background:#eaf8f0;
+
+  color:var(--green);
+
+  border:
+  1px solid #c9ead7;
+}
+
+
+.error{
+
+  background:#fff0f2;
+
+  color:var(--red);
+
+  border:
+  1px solid #f0ccd4;
+}
+
+
+/* =====================================================
+   NEW COLLECTION
+===================================================== */
+
+.switchRow{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin:
+  8px 0 16px;
+
+  padding:
+  12px 14px;
+
+  border:
+  1px solid var(--border);
+
+  border-radius:12px;
+
+  background:
+  var(--pink-soft);
+
+  color:
+  var(--pink-dark);
+
+  font-weight:bold;
+
+  font-size:13px;
+}
+
+
+.switchRow input{
+
+  width:auto;
+
+  margin:0;
+
+  accent-color:
+  var(--pink-dark);
+
+  transform:
+  scale(1.25);
+}
+
+
+/* =====================================================
+   PRODUCT
+===================================================== */
+
+.product{
+
+  background:
+  linear-gradient(
+    145deg,
+    #ffffff,
+    #fff7f9
+  );
+
+  border:
+  1px solid var(--border);
+
+  border-radius:18px;
+
+  padding:16px;
+
+  margin-bottom:15px;
+
+  box-shadow:
+  0 8px 25px
+  rgba(50,20,30,.05);
+}
+
+
+.product img{
+
+  width:100%;
+
+  max-height:280px;
+
+  object-fit:contain;
+
+  border-radius:14px;
+
+  background:
+  #fff7f9;
+
+  border:
+  1px solid var(--border);
+
+  margin-bottom:12px;
+}
+
+
+.product h3{
+
+  margin:
+  5px 0 8px;
+
+  color:
+  var(--black);
+
+  font-size:17px;
+}
+
+
+.product p{
+
+  margin:
+  6px 0;
+
+  color:
+  var(--muted);
+
+  font-size:13px;
+
+  line-height:1.5;
+}
+
+
+.price{
+
+  color:
+  var(--pink-dark) !important;
+
+  font-size:20px !important;
+
+  font-weight:bold;
+}
+
+
+/* =====================================================
+   NEW BADGE
+===================================================== */
+
+.newBadge{
+
+  display:inline-block;
+
+  background:
+  var(--pink-light);
+
+  color:
+  #704052;
+
+  padding:
+  7px 11px;
+
+  border-radius:20px;
+
+  border:
+  1px solid var(--pink);
+
+  font-size:10px;
+
+  font-weight:bold;
+
+  margin-bottom:10px;
+}
+
+
+/* =====================================================
+   EDIT TITLE
+===================================================== */
+
+.editTitle{
+
+  color:
+  var(--pink-dark);
+}
+
+
+/* =====================================================
+   SMALL TEXT
+===================================================== */
+
+.small{
+
+  color:
+  #9b9095;
+
+  font-size:11px;
+
+  margin-top:8px;
+}
+
+
+/* =====================================================
+   ADMIN HEADER
+===================================================== */
+
+.adminHeader{
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+
+.adminHeader::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:180px;
+
+  height:180px;
+
+  border-radius:50%;
+
+  background:
+  rgba(233,168,186,.18);
+
+  filter:blur(45px);
+
+  top:-100px;
+
+  left:-60px;
+
+  pointer-events:none;
+}
+
+
+.adminHeader h1,
+.adminHeader .subtitle{
+
+  position:relative;
+
+  z-index:1;
+}
+
+
+/* =====================================================
+   PRODUCT LIST HEADER
+===================================================== */
+
+.productHeader{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:15px;
+
+  margin-bottom:18px;
+}
+
+
+.productHeader h2{
+
+  margin:0;
+}
+
+
+.productCount{
+
+  background:
+  var(--pink-soft);
+
+  border:
+  1px solid var(--border);
+
+  color:
+  var(--pink-dark);
+
+  padding:
+  7px 11px;
+
+  border-radius:20px;
+
+  font-size:11px;
+
+  font-weight:bold;
+}
+
+
+/* =====================================================
+   FILE INPUT
+===================================================== */
+
+input[type="file"]{
+
+  padding:
+  10px;
+
+  background:
+  #fff7f9;
+
+  cursor:pointer;
+}
+
+
+input[type="file"]::file-selector-button{
+
+  border:0;
+
+  border-radius:8px;
+
+  padding:
+  8px 11px;
+
+  margin-right:10px;
+
+  background:
+  var(--pink-light);
+
+  color:
+  #58323e;
+
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+  .container{
+
+    padding:
+    15px 12px 45px;
+  }
+
+
+  .card{
+
+    padding:
+    17px;
+
+    border-radius:18px;
+  }
+
+
+  .loginBox{
+
+    margin:
+    40px auto;
+  }
+
+
+  .logout{
+
+    padding:
+    8px 12px;
+
+    font-size:11px;
+  }
+
+
+  h1{
+
+    font-size:22px;
+
+    padding-right:65px;
+  }
+
+
+  .loginBox h1{
+
+    padding-right:0;
+  }
+
+
+  h2{
+
+    font-size:19px;
+  }
+
+
+  input,
+  select,
+  textarea{
+
+    font-size:14px;
+
+    padding:13px;
+  }
+
+
+  button{
+
+    font-size:12px;
+
+    padding:
+    11px 14px;
+  }
+
+
+  .productHeader{
+
+    align-items:flex-start;
+  }
+
+
+  .productHeader h2{
+
+    font-size:18px;
+  }
+
+
+  .product{
+
+    padding:12px;
+
+    border-radius:16px;
+  }
+
+
+  .product img{
+
+    max-height:230px;
+  }
+
+
+  .product h3{
+
+    font-size:15px;
+  }
+
+
+  .product p{
+
+    font-size:12px;
+  }
+
+
+  .price{
+
+    font-size:18px !important;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- =====================================================
+     LOGIN
+===================================================== -->
+
+<div
+id="loginSection"
+class="loginBox card">
+
+
+  <h1>
+    HARI LAXMI JEWELLERS
+  </h1>
+
+
+  <div class="subtitle">
+    ADMIN PANEL
+  </div>
+
+
+  <div
+  id="loginMessage"
+  class="message">
+  </div>
+
+
+  <input
+  type="email"
+  id="email"
+  placeholder="Admin Email"
+  >
+
+
+  <input
+  type="password"
+  id="password"
+  placeholder="Password"
+  >
+
+
+  <button
+  class="primary"
+  onclick="login()"
+  >
+    LOGIN
+  </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     ADMIN
+===================================================== -->
+
+<div
+id="adminSection"
+class="hidden">
+
+
+  <!-- HEADER -->
+
+  <div
+  class="card adminHeader clearfix">
+
+
+    <button
+    class="logout"
+    onclick="logout()"
+    >
+      LOGOUT
+    </button>
+
+
+    <h1>
+      HARI LAXMI JEWELLERS
+    </h1>
+
+
+    <div class="subtitle">
+      925 SILVER JEWELLERY — ADMIN PANEL
+    </div>
+
+
+  </div>
+
+
+
+  <!-- ADD / EDIT -->
+
+  <div class="card">
+
+
+    <h2 id="formTitle">
+      ➕ Add Product
+    </h2>
+
+
+    <div
+    id="productMessage"
+    class="message">
+    </div>
+
+
+    <input
+    type="text"
+    id="productName"
+    placeholder="Product Name"
+    >
+
+
+    <select id="category">
+
+      <option value="">
+        Select Category
+      </option>
+
+      <option value="Rings">
+        Rings
+      </option>
+
+      <option value="Bracelets">
+        Bracelets
+      </option>
+
+      <option value="Necklaces">
+        Necklaces
+      </option>
+
+      <option value="Pendants">
+        Pendants
+      </option>
+
+    </select>
+
+
+    <input
+    type="text"
+    id="material"
+    value="925 Silver"
+    placeholder="Material"
+    >
+
+
+    <input
+    type="number"
+    id="price"
+    placeholder="Price"
+    >
+
+
+    <textarea
+    id="description"
+    placeholder="Product Description"
+    ></textarea>
+
+
+    <label class="switchRow">
+
+      <input
+      type="checkbox"
+      id="isNew"
+      >
+
+      <span>
+        🆕 New Collection
+      </span>
+
+    </label>
+
+
+    <input
+    type="file"
+    id="productImage"
+    accept="image/*"
+    >
+
+
+    <button
+    id="addButton"
+    class="primary"
+    onclick="addProduct()"
+    >
+      ADD PRODUCT
+    </button>
+
+
+    <button
+    id="updateButton"
+    class="primary hidden"
+    onclick="updateProduct()"
+    >
+      UPDATE PRODUCT
+    </button>
+
+
+    <button
+    id="cancelButton"
+    class="secondary hidden"
+    onclick="cancelEdit()"
+    >
+      CANCEL EDIT
+    </button>
+
+
+    <p class="small">
+      Product photo select karke upload karo.
+    </p>
+
+
+  </div>
+
+
+
+  <!-- PRODUCTS -->
+
+  <div class="card">
+
+
+    <div class="productHeader">
+
+      <h2>
+        📦 Products
+      </h2>
+
+      <div
+      id="productCount"
+      class="productCount">
+        0 Products
+      </div>
+
+    </div>
+
+
+    <div id="productsList">
+      Loading products...
+    </div>
+
+
+  </div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+/* =====================================
+   SUPABASE SETTINGS
+===================================== */
+
+const SUPABASE_URL =
+"https://couerfmbacibrpzpulup.supabase.co";
+
+const SUPABASE_KEY =
+"sb_publishable_XOSTDuXrnD-mE_LxQtPZ8w_mpNOHtsX";
+
+const BUCKET_NAME =
+"Product-images";
+
+let editingId = null;
+
+
+/* =====================================
+   REFRESH ACCESS TOKEN
+===================================== */
+
+async function refreshAccessToken(){
+
+  const refreshToken =
+    localStorage.getItem(
+      "refresh_token"
+    );
+
+  if(!refreshToken){
+    return false;
+  }
+
+  try{
+
+    const response =
+      await fetch(
+        SUPABASE_URL +
+        "/auth/v1/token?grant_type=refresh_token",
+        {
+          method:"POST",
+
+          headers:{
+            "apikey":
+            SUPABASE_KEY,
+
+            "Content-Type":
+            "application/json"
+          },
+
+          body:JSON.stringify({
+            refresh_token:
+            refreshToken
+          })
+        }
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(!response.ok){
+
+      console.log(
+        "Token refresh failed:",
+        data
+      );
+
+      return false;
+    }
+
+
+    localStorage.setItem(
+      "access_token",
+      data.access_token
+    );
+
+
+    if(data.refresh_token){
+
+      localStorage.setItem(
+        "refresh_token",
+        data.refresh_token
+      );
+
+    }
+
+
+    return true;
+
+  }
+
+  catch(error){
+
+    console.log(
+      "Token refresh error:",
+      error
+    );
+
+    return false;
+
+  }
+
+}
+
+
+/* =====================================
+   SUPABASE REQUEST
+===================================== */
+
+async function supabaseRequest(
+  endpoint,
+  options={}
+){
+
+  async function makeRequest(){
+
+    const accessToken =
+      localStorage.getItem(
+        "access_token"
+      );
+
+
+    const headers = {
+
+      "apikey":
+      SUPABASE_KEY,
+
+      "Authorization":
+      "Bearer " +
+      accessToken,
+
+      "Content-Type":
+      "application/json",
+
+      ...(options.headers || {})
+
+    };
+
+
+    return fetch(
+      SUPABASE_URL +
+      endpoint,
+      {
+        ...options,
+        headers:headers
+      }
+    );
+
+  }
+
+
+  let response =
+    await makeRequest();
+
+
+  if(response.status === 401){
+
+    const refreshed =
+      await refreshAccessToken();
+
+
+    if(refreshed){
+
+      response =
+        await makeRequest();
+
+    }
+
+  }
+
+
+  return response;
+
+}
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+function showMessage(
+  elementId,
+  message,
+  type="success"
+){
+
+  const box =
+    document.getElementById(
+      elementId
+    );
+
+
+  box.textContent =
+    message;
+
+
+  box.className =
+    "message " + type;
+
+
+  box.style.display =
+    "block";
+
+
+  setTimeout(function(){
+
+    box.style.display =
+      "none";
+
+  },4000);
+
+}
+
+
+/* =====================================
+   LOGIN
+===================================== */
+
+async function login(){
+
+  const email =
+    document.getElementById(
+      "email"
+    ).value.trim();
+
+
+  const password =
+    document.getElementById(
+      "password"
+    ).value;
+
+
+  if(
+    !email ||
+    !password
+  ){
+
+    showMessage(
+      "loginMessage",
+      "Email aur password enter karo.",
+      "error"
+    );
+
+    return;
+
+  }
+
+
+  try{
+
+    const response =
+      await fetch(
+
+        SUPABASE_URL +
+        "/auth/v1/token?grant_type=password",
+
+        {
+
+          method:"POST",
+
+          headers:{
+
+            "apikey":
+            SUPABASE_KEY,
+
+            "Content-Type":
+            "application/json"
+
+          },
+
+          body:JSON.stringify({
+
+            email:email,
+
+            password:password
+
+          })
+
+        }
+
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(!response.ok){
+
+      throw new Error(
+
+        data.error_description ||
+        data.msg ||
+        "Login failed"
+
+      );
+
+    }
+
+
+    localStorage.setItem(
+      "access_token",
+      data.access_token
+    );
+
+
+    localStorage.setItem(
+      "refresh_token",
+      data.refresh_token
+    );
+
+
+    document.getElementById(
+      "loginSection"
+    ).classList.add(
+      "hidden"
+    );
+
+
+    document.getElementById(
+      "adminSection"
+    ).classList.remove(
+      "hidden"
+    );
+
+
+    loadProducts();
+
+  }
+
+  catch(error){
+
+    showMessage(
+      "loginMessage",
+      error.message,
+      "error"
+    );
+
+  }
+
+}
+
+
+/* =====================================
+   SESSION CHECK
+===================================== */
+
+async function checkSession(){
+
+  const token =
+    localStorage.getItem(
+      "access_token"
+    );
+
+
+  const refreshToken =
+    localStorage.getItem(
+      "refresh_token"
+    );
+
+
+  if(
+    !token &&
+    !refreshToken
+  ){
+
+    return;
+
+  }
+
+
+  if(refreshToken){
+
+    const refreshed =
+      await refreshAccessToken();
+
+
+    if(!refreshed){
+
+      localStorage.removeItem(
+        "access_token"
+      );
+
+      localStorage.removeItem(
+        "refresh_token"
+      );
+
+      return;
+
+    }
+
+  }
+
+
+  document.getElementById(
+    "loginSection"
+  ).classList.add(
+    "hidden"
+  );
+
+
+  document.getElementById(
+    "adminSection"
+  ).classList.remove(
+    "hidden"
+  );
+
+
+  loadProducts();
+
+}
+
+
+/* =====================================
+   LOGOUT
+===================================== */
+
+function logout(){
+
+  localStorage.removeItem(
+    "access_token"
+  );
+
+  localStorage.removeItem(
+    "refresh_token"
+  );
+
+  location.reload();
+
+}
+
+
+/* =====================================
+   UPLOAD IMAGE
+===================================== */
+
+async function uploadImage(file){
+
+  if(!file){
+    return "";
+  }
+
+
+  const token =
+    localStorage.getItem(
+      "access_token"
+    );
+
+
+  if(!token){
+
+    throw new Error(
+      "Login session expired."
+    );
+
+  }
+
+
+  const extension =
+    file.name
+    .split(".")
+    .pop();
+
+
+  const fileName =
+    Date.now() +
+    "_" +
+    Math.random()
+    .toString(36)
+    .substring(2) +
+    "." +
+    extension;
+
+
+  async function doUpload(){
+
+    const currentToken =
+      localStorage.getItem(
+        "access_token"
+      );
+
+
+    return fetch(
+
+      SUPABASE_URL +
+      "/storage/v1/object/" +
+      BUCKET_NAME +
+      "/" +
+      fileName,
+
+      {
+
+        method:"POST",
+
+        headers:{
+
+          "Authorization":
+          "Bearer " +
+          currentToken,
+
+          "apikey":
+          SUPABASE_KEY,
+
+          "Content-Type":
+          file.type ||
+          "image/jpeg"
+
+        },
+
+        body:file
+
+      }
+
+    );
+
+  }
+
+
+  let uploadResponse =
+    await doUpload();
+
+
+  if(uploadResponse.status === 401){
+
+    const refreshed =
+      await refreshAccessToken();
+
+
+    if(refreshed){
+
+      uploadResponse =
+        await doUpload();
+
+    }
+
+  }
+
+
+  if(!uploadResponse.ok){
+
+    const errorText =
+      await uploadResponse.text();
+
+
+    console.log(
+      errorText
+    );
+
+
+    throw new Error(
+      "Photo upload failed."
+    );
+
+  }
+
+
+  return (
+
+    SUPABASE_URL +
+
+    "/storage/v1/object/public/" +
+
+    BUCKET_NAME +
+
+    "/" +
+
+    fileName
+
+  );
+
+}
+
+
+/* =====================================
+   ADD PRODUCT
+===================================== */
+
+async function addProduct(){
+
+  const productName =
+    document.getElementById(
+      "productName"
+    ).value.trim();
+
+
+  const category =
+    document.getElementById(
+      "category"
+    ).value;
+
+
+  const material =
+    document.getElementById(
+      "material"
+    ).value.trim();
+
+
+  const price =
+    document.getElementById(
+      "price"
+    ).value;
+
+
+  const description =
+    document.getElementById(
+      "description"
+    ).value.trim();
+
+
+  const isNew =
+    document.getElementById(
+      "isNew"
+    ).checked;
+
+
+  const file =
+    document.getElementById(
+      "productImage"
+    ).files[0];
+
+
+  if(
+    !productName ||
+    !category ||
+    !price
+  ){
+
+    showMessage(
+      "productMessage",
+      "Product name, category aur price bharo.",
+      "error"
+    );
+
+    return;
+
+  }
+
+
+  try{
+
+    const addButton =
+      document.getElementById(
+        "addButton"
+      );
+
+
+    addButton.disabled =
+      true;
+
+
+    addButton.textContent =
+      "SAVING...";
+
+
+    let imageUrl = "";
+
+
+    if(file){
+
+      imageUrl =
+        await uploadImage(file);
+
+    }
+
+
+    const response =
+      await supabaseRequest(
+
+        "/rest/v1/products",
+
+        {
+
+          method:"POST",
+
+          headers:{
+
+            "Prefer":
+            "return=representation"
+
+          },
+
+          body:JSON.stringify({
+
+            name:
+            productName,
+
+            category:
+            category,
+
+            material:
+            material ||
+            "925 Silver",
+
+            price:
+            Number(price),
+
+            description:
+            description,
+
+            image_url:
+            imageUrl,
+
+            is_new:
+            isNew
+
+          })
+
+        }
+
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(!response.ok){
+
+      console.log(data);
+
+      throw new Error(
+        data.message ||
+        "Product save failed."
+      );
+
+    }
+
+
+    showMessage(
+      "productMessage",
+      "✅ Product successfully added!"
+    );
+
+
+    clearForm();
+
+    loadProducts();
+
+  }
+
+  catch(error){
+
+    console.log(error);
+
+    showMessage(
+      "productMessage",
+      error.message,
+      "error"
+    );
+
+  }
+
+  finally{
+
+    const addButton =
+      document.getElementById(
+        "addButton"
+      );
+
+
+    addButton.disabled =
+      false;
+
+
+    addButton.textContent =
+      "ADD PRODUCT";
+
+  }
+
+}
+
+
+/* =====================================
+   START EDIT
+===================================== */
+
+async function startEdit(id){
+
+  try{
+
+    const response =
+      await supabaseRequest(
+
+        "/rest/v1/products?id=eq." +
+        id +
+        "&select=*"
+
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(!response.ok){
+
+      throw new Error(
+        "Product load failed."
+      );
+
+    }
+
+
+    if(!data.length){
+
+      throw new Error(
+        "Product not found."
+      );
+
+    }
+
+
+    const product =
+      data[0];
+
+
+    editingId =
+      product.id;
+
+
+    document.getElementById(
+      "productName"
+    ).value =
+      product.name || "";
+
+
+    document.getElementById(
+      "category"
+    ).value =
+      product.category || "";
+
+
+    document.getElementById(
+      "material"
+    ).value =
+      product.material ||
+      "925 Silver";
+
+
+    document.getElementById(
+      "price"
+    ).value =
+      product.price || "";
+
+
+    document.getElementById(
+      "description"
+    ).value =
+      product.description || "";
+
+
+    document.getElementById(
+      "isNew"
+    ).checked =
+      product.is_new === true;
+
+
+    document.getElementById(
+      "formTitle"
+    ).innerHTML =
+      "✏️ Edit Product";
+
+
+    document.getElementById(
+      "formTitle"
+    ).classList.add(
+      "editTitle"
+    );
+
+
+    document.getElementById(
+      "addButton"
+    ).classList.add(
+      "hidden"
+    );
+
+
+    document.getElementById(
+      "updateButton"
+    ).classList.remove(
+      "hidden"
+    );
+
+
+    document.getElementById(
+      "cancelButton"
+    ).classList.remove(
+      "hidden"
+    );
+
+
+    window.scrollTo({
+
+      top:0,
+
+      behavior:"smooth"
+
+    });
+
+  }
+
+  catch(error){
+
+    showMessage(
+      "productMessage",
+      error.message,
+      "error"
+    );
+
+  }
+
+}
+
+
+/* =====================================
+   UPDATE PRODUCT
+===================================== */
+
+async function updateProduct(){
+
+  if(!editingId){
+    return;
+  }
+
+
+  const productName =
+    document.getElementById(
+      "productName"
+    ).value.trim();
+
+
+  const category =
+    document.getElementById(
+      "category"
+    ).value;
+
+
+  const material =
+    document.getElementById(
+      "material"
+    ).value.trim();
+
+
+  const price =
+    document.getElementById(
+      "price"
+    ).value;
+
+
+  const description =
+    document.getElementById(
+      "description"
+    ).value.trim();
+
+
+  const isNew =
+    document.getElementById(
+      "isNew"
+    ).checked;
+
+
+  const file =
+    document.getElementById(
+      "productImage"
+    ).files[0];
+
+
+  if(
+    !productName ||
+    !category ||
+    !price
+  ){
+
+    showMessage(
+      "productMessage",
+      "Product name, category aur price bharo.",
+      "error"
+    );
+
+    return;
+
+  }
+
+
+  try{
+
+    const updateButton =
+      document.getElementById(
+        "updateButton"
+      );
+
+
+    updateButton.disabled =
+      true;
+
+
+    updateButton.textContent =
+      "UPDATING...";
+
+
+    const updateData = {
+
+      name:
+      productName,
+
+      category:
+      category,
+
+      material:
+      material ||
+      "925 Silver",
+
+      price:
+      Number(price),
+
+      description:
+      description,
+
+      is_new:
+      isNew
+
+    };
+
+
+    if(file){
+
+      updateData.image_url =
+        await uploadImage(file);
+
+    }
+
+
+    const response =
+      await supabaseRequest(
+
+        "/rest/v1/products?id=eq." +
+        editingId,
+
+        {
+
+          method:"PATCH",
+
+          headers:{
+
+            "Prefer":
+            "return=representation"
+
+          },
+
+          body:
+          JSON.stringify(updateData)
+
+        }
+
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(!response.ok){
+
+      console.log(data);
+
+      throw new Error(
+        data.message ||
+        "Product update failed."
+      );
+
+    }
+
+
+    showMessage(
+      "productMessage",
+      "✅ Product successfully updated!"
+    );
+
+
+    cancelEdit();
+
+    loadProducts();
+
+  }
+
+  catch(error){
+
+    console.log(error);
+
+    showMessage(
+      "productMessage",
+      error.message,
+      "error"
+    );
+
+  }
+
+  finally{
+
+    const updateButton =
+      document.getElementById(
+        "updateButton"
+      );
+
+
+    updateButton.disabled =
+      false;
+
+
+    updateButton.textContent =
+      "UPDATE PRODUCT";
+
+  }
+
+}
+
+
+/* =====================================
+   CANCEL EDIT
+===================================== */
+
+function cancelEdit(){
+
+  editingId = null;
+
+
+  document.getElementById(
+    "formTitle"
+  ).innerHTML =
+    "➕ Add Product";
+
+
+  document.getElementById(
+    "formTitle"
+  ).classList.remove(
+    "editTitle"
+  );
+
+
+  document.getElementById(
+    "addButton"
+  ).classList.remove(
+    "hidden"
+  );
+
+
+  document.getElementById(
+    "updateButton"
+  ).classList.add(
+    "hidden"
+  );
+
+
+  document.getElementById(
+    "cancelButton"
+  ).classList.add(
+    "hidden"
+  );
+
+
+  clearForm();
+
+}
+
+
+/* =====================================
+   CLEAR FORM
+===================================== */
+
+function clearForm(){
+
+  document.getElementById(
+    "productName"
+  ).value = "";
+
+
+  document.getElementById(
+    "category"
+  ).value = "";
+
+
+  document.getElementById(
+    "material"
+  ).value =
+    "925 Silver";
+
+
+  document.getElementById(
+    "price"
+  ).value = "";
+
+
+  document.getElementById(
+    "description"
+  ).value = "";
+
+
+  document.getElementById(
+    "productImage"
+  ).value = "";
+
+
+  document.getElementById(
+    "isNew"
+  ).checked = false;
+
+}
+
+
+/* =====================================
+   LOAD PRODUCTS
+===================================== */
+
+async function loadProducts(){
+
+  const list =
+    document.getElementById(
+      "productsList"
+    );
+
+
+  try{
+
+    const response =
+      await supabaseRequest(
+
+        "/rest/v1/products?select=*&order=created_at.desc"
+
+      );
+
+
+    const products =
+      await response.json();
+
+
+    if(!response.ok){
+
+      throw new Error(
+        products.message ||
+        "Products load failed."
+      );
+
+    }
+
+
+    document.getElementById(
+      "productCount"
+    ).textContent =
+      products.length +
+      (
+        products.length === 1
+        ? " Product"
+        : " Products"
+      );
+
+
+    if(!products.length){
+
+      list.innerHTML =
+        "<p class='small'>No products found.</p>";
+
+      return;
+
+    }
+
+
+    list.innerHTML =
+      products.map(
+
+        product => {
+
+          const image =
+            product.image_url ||
+
+            "https://via.placeholder.com/600x600?text=925+Silver";
+
+
+          const newBadge =
+            product.is_new
+
+            ?
+
+            `
+            <div class="newBadge">
+              🆕 NEW COLLECTION
+            </div>
+            `
+
+            :
+
+            "";
+
+
+          return `
+
+          <div class="product">
+
+            ${newBadge}
+
+            <img
+              src="${escapeHtml(image)}"
+              alt="${escapeHtml(
+                product.name || "Product"
+              )}"
+            >
+
+            <h3>
+              ${escapeHtml(
+                product.name || ""
+              )}
+            </h3>
+
+            <p>
+              Category:
+              ${escapeHtml(
+                product.category || ""
+              )}
+            </p>
+
+            <p>
+              Material:
+              ${escapeHtml(
+                product.material ||
+                "925 Silver"
+              )}
+            </p>
+
+            <p class="price">
+              ₹${Number(
+                product.price || 0
+              ).toLocaleString("en-IN")}
+            </p>
+
+            <p>
+              ${escapeHtml(
+                product.description || ""
+              )}
+            </p>
+
+            <button
+              class="primary"
+              onclick="startEdit(${product.id})"
+            >
+              ✏️ EDIT PRODUCT
+            </button>
+
+            <button
+              class="danger"
+              onclick="deleteProduct(${product.id})"
+            >
+              🗑️ DELETE PRODUCT
+            </button>
+
+          </div>
+
+          `;
+
+        }
+
+      ).join("");
+
+  }
+
+  catch(error){
+
+    list.innerHTML =
+
+      `<p style="color:#b8324b;">
+        ${escapeHtml(
+          error.message
+        )}
+      </p>`;
+
+  }
+
+}
+
+
+/* =====================================
+   DELETE PRODUCT
+===================================== */
+
+async function deleteProduct(id){
+
+  try{
+
+    const productResponse =
+      await supabaseRequest(
+
+        "/rest/v1/products?id=eq." +
+        id +
+        "&select=id,name"
+
+      );
+
+
+    const products =
+      await productResponse.json();
+
+
+    if(!productResponse.ok){
+
+      throw new Error(
+        "Product details load failed."
+      );
+
+    }
+
+
+    if(!products.length){
+
+      throw new Error(
+        "Product not found."
+      );
+
+    }
+
+
+    const productName =
+      products[0].name ||
+      "this product";
+
+
+    const confirmDelete =
+      confirm(
+
+        "⚠️ DELETE PRODUCT?\n\n" +
+
+        "Product: " +
+        productName +
+        "\n\n" +
+
+        "Ye action undo nahi ho sakta."
+
+      );
+
+
+    if(!confirmDelete){
+      return;
+    }
+
+
+    const response =
+      await supabaseRequest(
+
+        "/rest/v1/products?id=eq." +
+        id,
+
+        {
+          method:"DELETE"
+        }
+
+      );
+
+
+    if(!response.ok){
+
+      const data =
+        await response.json();
+
+
+      throw new Error(
+        data.message ||
+        "Delete failed."
+      );
+
+    }
+
+
+    showMessage(
+
+      "productMessage",
+
+      "✅ " +
+      productName +
+      " successfully deleted."
+
+    );
+
+
+    loadProducts();
+
+  }
+
+  catch(error){
+
+    showMessage(
+
+      "productMessage",
+
+      error.message,
+
+      "error"
+
+    );
+
+  }
+
+}
+
+
+/* =====================================
+   ESCAPE HTML
+===================================== */
+
+function escapeHtml(value){
+
+  return String(value)
+
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+
+    .replace(
+      /</g,
+      "&lt;"
+    )
+
+    .replace(
+      />/g,
+      "&gt;"
+    )
+
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+
+    .replace(
+      /'/g,
+      "&#039;"
+    );
+
+}
+
+
+/* =====================================
+   START
+===================================== */
+
+checkSession();
+
+</script>
+
+</body>
+</html>
