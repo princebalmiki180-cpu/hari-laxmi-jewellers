@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Hari Laxmi Jewellers | 925 Silver Jewellery</title>
+
+<meta name="description"
+content="Hari Laxmi Jewellers - Premium 925 Silver Jewellery in Lucknow. Explore rings, bracelets, necklaces and pendants.">
+
+<meta name="theme-color"
+content="#f7d9e2">
+
+<style>
+
+/* =====================================================
+   HARI LAXMI JEWELLERS
+   WHITE + BLUSH PINK + BLACK LUXURY THEME
+===================================================== */
+
+:root{
+
+    --pink:#e9a8ba;
+    --pink-light:#f8dce4;
+    --pink-soft:#f3c5d1;
+    --pink-dark:#c77d95;
+
+    --white:#ffffff;
+    --cream:#fffafb;
+
+    --black:#111011;
+    --black-2:#1b1719;
+
+    --text:#252124;
+    --muted:#756c70;
+
+    --border:#efd8df;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fff9fb 45%,
+        #ffffff 100%
+    );
+
+    color:var(--text);
+
+    overflow-x:hidden;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:
+    rgba(255,255,255,.94);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:
+    1px solid var(--border);
+
+    box-shadow:
+    0 5px 25px rgba(30,15,20,.06);
+}
+
+
+.header-inner{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:
+    17px 22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+
+.logo{
+
+    text-decoration:none;
+
+    color:var(--black);
+
+    font-size:19px;
+
+    font-weight:800;
+
+    letter-spacing:1.4px;
+
+    line-height:1.1;
+}
+
+
+.logo span{
+
+    display:block;
+
+    color:var(--pink-dark);
+
+    font-size:9px;
+
+    letter-spacing:4px;
+
+    margin-top:5px;
+}
+
+
+.menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+}
+
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#383236;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    transition:.25s;
+}
+
+
+.menu a:hover{
+
+    color:var(--pink-dark);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    min-height:
+    620px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+        rgba(255,255,255,.78),
+        rgba(255,245,248,.88)
+    ),
+
+    url("https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1600&q=90")
+
+    center/cover;
+}
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+    rgba(233,168,186,.22);
+
+    filter:blur(80px);
+
+    top:-220px;
+
+    left:-150px;
+}
+
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:
+    rgba(233,168,186,.15);
+
+    filter:blur(80px);
+
+    bottom:-250px;
+
+    right:-120px;
+}
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+}
+
+
+.small-title{
+
+    color:var(--pink-dark);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+
+    text-transform:uppercase;
+}
+
+
+.hero h1{
+
+    font-size:
+    clamp(38px,7vw,78px);
+
+    line-height:1.03;
+
+    color:var(--black);
+
+    letter-spacing:-2px;
+
+    margin-bottom:22px;
+}
+
+
+.hero h1 span{
+
+    color:var(--pink-dark);
+}
+
+
+.hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#62585c;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:32px;
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+}
+
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:145px;
+
+    padding:13px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    transition:.25s;
+}
+
+
+.hero-btn.primary{
+
+    background:var(--black);
+
+    color:white;
+
+    border:
+    1px solid var(--black);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+}
+
+
+.hero-btn.primary:hover{
+
+    background:var(--pink-dark);
+
+    border-color:var(--pink-dark);
+
+    transform:translateY(-2px);
+}
+
+
+.hero-btn.secondary{
+
+    background:
+    rgba(255,255,255,.75);
+
+    color:var(--black);
+
+    border:
+    1px solid var(--pink-dark);
+}
+
+
+.hero-btn.secondary:hover{
+
+    background:var(--pink-light);
+
+    transform:translateY(-2px);
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+section{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:
+    75px 22px;
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:38px;
+}
+
+
+.section-title small{
+
+    display:block;
+
+    color:var(--pink-dark);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+    margin-bottom:8px;
+}
+
+
+.section-title h2{
+
+    color:var(--black);
+
+    font-size:
+    clamp(28px,5vw,42px);
+
+    margin-bottom:10px;
+}
+
+
+.section-title p{
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+
+/* =====================================================
+   CATEGORIES
+===================================================== */
+
+.categories{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:16px;
+}
+
+
+.category{
+
+    min-height:175px;
+
+    border-radius:24px;
+
+    border:
+    1px solid var(--border);
+
+    background:
+    linear-gradient(
+        145deg,
+        #ffffff,
+        #fff5f8
+    );
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 8px 30px rgba(55,20,30,.04);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.category::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:
+    rgba(233,168,186,.18);
+
+    filter:blur(25px);
+}
+
+
+.category:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--pink);
+
+    box-shadow:
+    0 18px 40px rgba(199,125,149,.14);
+}
+
+
+.category-icon{
+
+    position:relative;
+
+    z-index:1;
+
+    font-size:42px;
+
+    margin-bottom:13px;
+}
+
+
+.category-name{
+
+    position:relative;
+
+    z-index:1;
+
+    color:var(--black);
+
+    font-weight:800;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+}
+
+
+/* =====================================================
+   NEW COLLECTION
+===================================================== */
+
+.new-section{
+
+    max-width:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff3f7,
+        #ffffff,
+        #fff7f9
+    );
+
+    border-top:
+    1px solid var(--border);
+
+    border-bottom:
+    1px solid var(--border);
+}
+
+
+.new-inner{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+
+.new-title{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+
+.new-title small{
+
+    color:var(--pink-dark);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+}
+
+
+.new-title h2{
+
+    color:var(--black);
+
+    font-size:
+    clamp(28px,5vw,42px);
+
+    margin:8px 0;
+}
+
+
+.new-title p{
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-area{
+
+    max-width:1200px;
+
+    margin:
+    0 auto 25px;
+
+    padding:
+    0 22px;
+}
+
+
+.search-box{
+
+    position:relative;
+}
+
+
+.search-box input{
+
+    width:100%;
+
+    height:54px;
+
+    padding:
+    0 50px 0 20px;
+
+    border:
+    1px solid var(--border);
+
+    border-radius:30px;
+
+    outline:none;
+
+    background:#ffffff;
+
+    color:var(--black);
+
+    font-size:14px;
+
+    box-shadow:
+    0 8px 25px rgba(40,20,25,.04);
+
+    transition:.25s;
+}
+
+
+.search-box input:focus{
+
+    border-color:var(--pink);
+
+    box-shadow:
+    0 0 0 4px rgba(233,168,186,.12);
+}
+
+
+.search-box input::placeholder{
+
+    color:#a49a9e;
+}
+
+
+.search-icon{
+
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:
+    translateY(-50%);
+
+    color:var(--pink-dark);
+
+    font-size:20px;
+}
+
+
+/* =====================================================
+   FILTER
+===================================================== */
+
+.filters{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:9px;
+
+    margin:
+    0 auto 32px;
+
+    padding:
+    0 22px;
+
+    overflow-x:auto;
+
+    scrollbar-width:none;
+}
+
+
+.filters::-webkit-scrollbar{
+
+    display:none;
+}
+
+
+.filter{
+
+    flex-shrink:0;
+
+    border:
+    1px solid var(--border);
+
+    background:white;
+
+    color:#6c6266;
+
+    padding:
+    9px 18px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+
+.filter:hover,
+.filter.active{
+
+    background:var(--pink);
+
+    color:#21151a;
+
+    border-color:var(--pink);
+
+    box-shadow:
+    0 7px 20px rgba(199,125,149,.15);
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:
+    0 22px 80px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+
+.product{
+
+    background:#ffffff;
+
+    border:
+    1px solid var(--border);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 30px rgba(35,15,20,.05);
+
+    transition:.3s;
+
+    position:relative;
+}
+
+
+.product:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--pink);
+
+    box-shadow:
+    0 18px 40px rgba(199,125,149,.13);
+}
+
+
+.product-image{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    background:#faf5f7;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+}
+
+
+.product-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+    transform .45s ease;
+}
+
+
+.product:hover
+.product-image img{
+
+    transform:scale(1.04);
+}
+
+
+.zoom-icon{
+
+    position:absolute;
+
+    right:12px;
+
+    bottom:12px;
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+    rgba(255,255,255,.92);
+
+    color:var(--black);
+
+    border:
+    1px solid var(--border);
+
+    font-size:16px;
+}
+
+
+.new-badge{
+
+    position:absolute;
+
+    top:12px;
+
+    left:12px;
+
+    background:var(--pink-light);
+
+    color:#6f3d4d;
+
+    border:
+    1px solid var(--pink);
+
+    padding:
+    6px 9px;
+
+    border-radius:20px;
+
+    font-size:9px;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+    z-index:3;
+}
+
+
+.product-info{
+
+    padding:17px;
+}
+
+
+.product-category{
+
+    color:var(--pink-dark);
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    font-weight:800;
+
+    margin-bottom:7px;
+}
+
+
+.product-name{
+
+    color:var(--black);
+
+    font-size:15px;
+
+    font-weight:800;
+
+    line-height:1.35;
+
+    min-height:40px;
+}
+
+
+.product-material{
+
+    color:#8b8084;
+
+    font-size:11px;
+
+    margin-top:6px;
+}
+
+
+.product-bottom{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    margin-top:14px;
+}
+
+
+.price{
+
+    color:var(--pink-dark);
+
+    font-size:17px;
+
+    font-weight:900;
+}
+
+
+.enquire{
+
+    border:
+    1px solid var(--black);
+
+    color:var(--black);
+
+    background:white;
+
+    text-decoration:none;
+
+    padding:
+    8px 12px;
+
+    border-radius:20px;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    transition:.25s;
+
+    white-space:nowrap;
+}
+
+
+.enquire:hover{
+
+    background:var(--black);
+
+    color:white;
+}
+
+
+/* =====================================================
+   EMPTY PRODUCTS
+===================================================== */
+
+.no-products{
+
+    grid-column:1/-1;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section{
+
+    max-width:900px;
+
+    text-align:center;
+
+    padding-top:20px;
+}
+
+
+.about{
+
+    color:#6d6367;
+
+    line-height:1.8;
+
+    font-size:14px;
+}
+
+
+.about strong{
+
+    color:var(--black);
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section{
+
+    max-width:1000px;
+}
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:15px;
+}
+
+
+.contact-box{
+
+    padding:25px 18px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #ffffff,
+        #fff5f8
+    );
+
+    border:
+    1px solid var(--border);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:#766c70;
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+
+.contact-box strong{
+
+    display:block;
+
+    color:var(--black);
+
+    font-size:14px;
+
+    margin-bottom:7px;
+}
+
+
+.contact-box a{
+
+    color:var(--pink-dark);
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:var(--black);
+
+    color:#aaa1a5;
+
+    text-align:center;
+
+    padding:
+    35px 20px;
+
+    border-top:
+    1px solid var(--pink-light);
+}
+
+
+.footer-brand{
+
+    color:var(--pink-light);
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+
+    margin-bottom:8px;
+}
+
+
+footer p{
+
+    font-size:11px;
+
+    line-height:1.7;
+}
+
+
+/* =====================================================
+   FLOATING WHATSAPP
+===================================================== */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:18px;
+
+    bottom:18px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:25px;
+
+    z-index:900;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.2);
+}
+
+
+/* =====================================================
+   IMAGE VIEWER
+===================================================== */
+
+.viewer{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:3000;
+
+    background:
+    rgba(15,10,12,.96);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    touch-action:none;
+}
+
+
+.viewer.show{
+
+    display:flex;
+}
+
+
+.viewer-image{
+
+    max-width:
+    92vw;
+
+    max-height:
+    88vh;
+
+    object-fit:contain;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+    transform:
+    translate(0,0)
+    scale(1);
+
+    transition:
+    transform .12s ease;
+}
+
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:
+    1px solid rgba(255,255,255,.25);
+
+    background:
+    rgba(255,255,255,.1);
+
+    color:white;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    z-index:4;
+}
+
+
+.viewer-hint{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+    color:#ead9de;
+
+    border:
+    1px solid rgba(255,255,255,.18);
+
+    padding:
+    8px 14px;
+
+    border-radius:20px;
+
+    font-size:10px;
+
+    white-space:nowrap;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:900px){
+
+    .menu{
+
+        gap:13px;
+    }
+
+    .menu a{
+
+        font-size:10px;
+    }
+
+    .categories{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .products{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:12px;
+    }
+
+    .product-info{
+
+        padding:13px;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .header-inner{
+
+        padding:
+        13px 15px;
+
+        gap:8px;
+    }
+
+    .logo{
+
+        font-size:14px;
+
+        letter-spacing:1px;
+    }
+
+    .logo span{
+
+        font-size:7px;
+
+        letter-spacing:2.5px;
+    }
+
+    .menu{
+
+        gap:9px;
+    }
+
+    .menu a:nth-child(n+4){
+
+        display:none;
+    }
+
+
+    .hero{
+
+        min-height:
+        570px;
+
+        padding:
+        70px 18px;
+    }
+
+
+    .small-title{
+
+        font-size:10px;
+
+        letter-spacing:2.5px;
+    }
+
+
+    .hero h1{
+
+        font-size:
+        42px;
+
+        letter-spacing:-1.5px;
+    }
+
+
+    .hero p{
+
+        font-size:13px;
+
+        line-height:1.6;
+    }
+
+
+    section{
+
+        padding:
+        55px 15px;
+    }
+
+
+    .section-title{
+
+        margin-bottom:25px;
+    }
+
+
+    .categories{
+
+        gap:10px;
+    }
+
+
+    .category{
+
+        min-height:
+        135px;
+
+        border-radius:18px;
+    }
+
+
+    .category-icon{
+
+        font-size:32px;
+
+        margin-bottom:8px;
+    }
+
+
+    .category-name{
+
+        font-size:12px;
+    }
+
+
+    .search-area{
+
+        padding:
+        0 15px;
+    }
+
+
+    .filters{
+
+        justify-content:flex-start;
+
+        padding:
+        0 15px;
+
+        margin-bottom:25px;
+    }
+
+
+    .products{
+
+        padding:
+        0 15px 60px;
+
+        gap:10px;
+    }
+
+
+    .product{
+
+        border-radius:16px;
+    }
+
+
+    .product-info{
+
+        padding:11px;
+    }
+
+
+    .product-name{
+
+        font-size:12px;
+
+        min-height:34px;
+    }
+
+
+    .product-material{
+
+        font-size:9px;
+    }
+
+
+    .price{
+
+        font-size:14px;
+    }
+
+
+    .product-bottom{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+
+    .enquire{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:8px;
+    }
+
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .viewer-hint{
+
+        font-size:9px;
+
+        bottom:12px;
+    }
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="header-inner">
+
+<a href="#home"
+class="logo">
+
+HARI LAXMI JEWELLERS
+
+<span>925 SILVER JEWELLERY</span>
+
+</a>
+
+
+<nav class="menu">
+
+<a href="#home">HOME</a>
+
+<a href="#new">NEW</a>
+
+<a href="#collection">COLLECTION</a>
+
+<a href="#about">ABOUT</a>
+
+<a href="#contact">CONTACT</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+class="hero"
+id="home">
+
+<div class="hero-content">
+
+<div class="small-title">
+
+PURE • ELEGANT • TIMELESS
+
+</div>
+
+
+<h1>
+
+925 Silver
+
+<br>
+
+<span>Made Beautiful.</span>
+
+</h1>
+
+
+<p>
+
+Discover premium 925 silver jewellery
+crafted for everyday elegance,
+special moments and timeless style.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#collection"
+class="hero-btn primary">
+
+Explore Collection
+
+</a>
+
+
+<a
+href="https://wa.me/918924943435"
+class="hero-btn secondary">
+
+WhatsApp Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATEGORIES
+===================================================== -->
+
+<section>
+
+<div class="section-title">
+
+<small>SHOP BY STYLE</small>
+
+<h2>Our Collections</h2>
+
+<p>
+Find your perfect piece in 925 Silver.
+</p>
+
+</div>
+
+
+<div class="categories">
+
+
+<div
+class="category"
+onclick="filterProducts('Rings')">
+
+<div class="category-icon">💍</div>
+
+<div class="category-name">
+Rings
+</div>
+
+</div>
+
+
+<div
+class="category"
+onclick="filterProducts('Bracelets')">
+
+<div class="category-icon">📿</div>
+
+<div class="category-name">
+Bracelets
+</div>
+
+</div>
+
+
+<div
+class="category"
+onclick="filterProducts('Necklaces')">
+
+<div class="category-icon">✨</div>
+
+<div class="category-name">
+Necklaces
+</div>
+
+</div>
+
+
+<div
+class="category"
+onclick="filterProducts('Pendants')">
+
+<div class="category-icon">💎</div>
+
+<div class="category-name">
+Pendants
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NEW COLLECTION
+===================================================== -->
+
+<section
+class="new-section"
+id="new">
+
+<div class="new-inner">
+
+<div class="new-title">
+
+<small>JUST ARRIVED</small>
+
+<h2>New Collection</h2>
+
+<p>
+Discover our latest 925 silver jewellery.
+</p>
+
+</div>
+
+
+<div
+id="newProducts"
+class="products"
+style="padding-bottom:20px;">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COLLECTION
+===================================================== -->
+
+<section
+id="collection"
+style="padding-bottom:20px;">
+
+<div class="section-title">
+
+<small>925 SILVER</small>
+
+<h2>Shop Jewellery</h2>
+
+<p>
+Choose your favourite design and enquire directly on WhatsApp.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- SEARCH -->
+
+<div class="search-area">
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search rings, bracelets, necklaces..."
+oninput="applyFilters()">
+
+<div class="search-icon">
+
+⌕
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- FILTERS -->
+
+<div class="filters">
+
+<button
+class="filter active"
+onclick="filterProducts('all',this)">
+
+All
+
+</button>
+
+
+<button
+class="filter"
+onclick="filterProducts('Rings',this)">
+
+Rings
+
+</button>
+
+
+<button
+class="filter"
+onclick="filterProducts('Bracelets',this)">
+
+Bracelets
+
+</button>
+
+
+<button
+class="filter"
+onclick="filterProducts('Necklaces',this)">
+
+Necklaces
+
+</button>
+
+
+<button
+class="filter"
+onclick="filterProducts('Pendants',this)">
+
+Pendants
+
+</button>
+
+</div>
+
+
+
+<!-- PRODUCTS -->
+
+<div
+id="products"
+class="products">
+
+<div class="no-products">
+
+Loading products...
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+id="about"
+class="about-section">
+
+<div class="section-title">
+
+<small>ABOUT US</small>
+
+<h2>Hari Laxmi Jewellers</h2>
+
+</div>
+
+
+<p class="about">
+
+Welcome to
+<strong>Hari Laxmi Jewellers</strong>,
+your destination for premium
+<strong>925 Silver Jewellery</strong>
+in Lucknow.
+
+<br><br>
+
+From elegant rings and bracelets
+to beautiful necklaces and pendants,
+we bring stylish silver jewellery
+for every occasion.
+
+<br><br>
+
+Every product is selected with
+attention to design, quality and
+everyday elegance.
+
+</p>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+id="contact"
+class="contact-section">
+
+<div class="section-title">
+
+<small>GET IN TOUCH</small>
+
+<h2>Contact Us</h2>
+
+<p>
+We are happy to help you with your jewellery enquiry.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<strong>📍 Visit Us</strong>
+
+UGF-3, Sector M,
+Aliganj Kursi Road,
+Lucknow – 226021
+
+</div>
+
+
+<div class="contact-box">
+
+<strong>📱 WhatsApp</strong>
+
+<a href="https://wa.me/918924943435">
+
+8924943435
+
+</a>
+
+</div>
+
+
+<div class="contact-box">
+
+<strong>📸 Instagram</strong>
+
+<a
+href="https://instagram.com/harilaxmijewellers"
+target="_blank">
+
+@harilaxmijewellers
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-brand">
+
+HARI LAXMI JEWELLERS
+
+</div>
+
+<p>
+
+925 SILVER JEWELLERY
+
+<br>
+
+© 2026 Hari Laxmi Jewellers.
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a
+class="whatsapp"
+href="https://wa.me/918924943435"
+target="_blank"
+aria-label="WhatsApp">
+
+☘
+
+</a>
+
+
+
+<!-- =====================================================
+     IMAGE VIEWER
+===================================================== -->
+
+<div
+id="viewer"
+class="viewer"
+onclick="closeViewer(event)">
+
+
+<button
+class="close"
+onclick="closeViewer()">
+
+×
+</button>
+
+
+<img
+id="viewerImage"
+class="viewer-image"
+src=""
+alt="Product">
+
+
+<div class="viewer-hint">
+
+Pinch to zoom • Drag to move • Double tap to zoom
+
+</div>
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   SUPABASE
+===================================================== */
+
+const SUPABASE_URL =
+"https://couerfmbacibrpzpulup.supabase.co";
+
+
+const SUPABASE_KEY =
+"sb_publishable_XOSTDuXrnD-mE_LxQtPZ8w_mpNOHtsX";
+
+
+const WHATSAPP =
+"918924943435";
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let allProducts = [];
+
+let currentCategory = "all";
+
+
+/* =====================================================
+   NORMALIZE CATEGORY
+===================================================== */
+
+function normalizeCategory(category){
+
+    return String(category || "")
+    .toLowerCase()
+    .trim()
+    .replace(/s$/,"");
+
+}
+
+
+/* =====================================================
+   LOAD PRODUCTS
+===================================================== */
+
+async function loadProducts(){
+
+    const productsBox =
+    document.getElementById("products");
+
+    const newBox =
+    document.getElementById("newProducts");
+
+
+    try{
+
+        const response =
+        await fetch(
+
+            SUPABASE_URL +
+            "/rest/v1/products?select=*&order=created_at.desc",
+
+            {
+                headers:{
+                    "apikey":
+                    SUPABASE_KEY,
+
+                    "Authorization":
+                    "Bearer " +
+                    SUPABASE_KEY
+                }
+            }
+
+        );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "Could not load products"
+            );
+
+        }
+
+
+        allProducts =
+        await response.json();
+
+
+        renderProducts(
+            allProducts,
+            productsBox
+        );
+
+
+        const newProducts =
+        allProducts.filter(
+            product =>
+            product.is_new === true
+        );
+
+
+        renderProducts(
+            newProducts,
+            newBox,
+            true
+        );
+
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+
+        productsBox.innerHTML = `
+
+        <div class="no-products">
+
+        Products could not be loaded.
+
+        </div>
+
+        `;
+
+
+        newBox.innerHTML = `
+
+        <div class="no-products">
+
+        No new collection available.
+
+        </div>
+
+        `;
+
+    }
+
+}
+
+
+/* =====================================================
+   RENDER PRODUCTS
+===================================================== */
+
+function renderProducts(
+    products,
+    container,
+    isNewSection=false
+){
+
+    if(!products.length){
+
+        container.innerHTML = `
+
+        <div class="no-products">
+
+        ${
+            isNewSection
+            ? "New collection coming soon."
+            : "No products found."
+        }
+
+        </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+    products.map(
+        product =>
+        createProductCard(product)
+    ).join("");
+
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+function createProductCard(product){
+
+    const image =
+    product.image_url ||
+    "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85";
+
+
+    const price =
+    product.price
+    ? "₹" +
+      Number(product.price)
+      .toLocaleString("en-IN")
+    : "Price on enquiry";
+
+
+    const category =
+    product.category ||
+    "Silver Jewellery";
+
+
+    const message =
+    "Hello Hari Laxmi Jewellers,%0A%0A" +
+
+    "I am interested in:%0A" +
+
+    product.name +
+
+    "%0A%0A" +
+
+    "Price: " +
+
+    price +
+
+    "%0A%0APlease share more details.";
+
+
+    return `
+
+    <div
+    class="product"
+    data-category="${normalizeCategory(category)}"
+    data-name="${String(product.name || "").toLowerCase()}">
+
+
+        <div
+        class="product-image"
+        onclick="openViewer('${escapeForAttribute(image)}')">
+
+
+            ${
+                product.is_new
+                ?
+                `
+                <div class="new-badge">
+                🆕 NEW COLLECTION
+                </div>
+                `
+                :
+                ""
+            }
+
+
+            <img
+            src="${escapeForAttribute(image)}"
+            alt="${escapeForAttribute(product.name || "925 Silver Jewellery")}"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85';">
+
+
+            <div class="zoom-icon">
+
+            ⤢
+
+            </div>
+
+        </div>
+
+
+        <div class="product-info">
+
+
+            <div class="product-category">
+
+            ${escapeHtml(category)}
+
+            </div>
+
+
+            <div class="product-name">
+
+            ${escapeHtml(product.name || "925 Silver Jewellery")}
+
+            </div>
+
+
+            <div class="product-material">
+
+            ${escapeHtml(product.material || "925 Silver")}
+
+            </div>
+
+
+            <div class="product-bottom">
+
+
+                <div class="price">
+
+                ${price}
+
+                </div>
+
+
+                <a
+                class="enquire"
+                href="https://wa.me/${WHATSAPP}?text=${message}"
+                target="_blank">
+
+                Enquire
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHtml(value){
+
+    return String(value)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+
+}
+
+
+function escapeForAttribute(value){
+
+    return String(value)
+    .replace(/\\/g,"\\\\")
+    .replace(/'/g,"\\'")
+    .replace(/"/g,"&quot;");
+
+}
+
+
+/* =====================================================
+   SEARCH + CATEGORY
+===================================================== */
+
+function applyFilters(){
+
+    const search =
+    document
+    .getElementById("searchInput")
+    .value
+    .toLowerCase()
+    .trim();
+
+
+    const filtered =
+    allProducts.filter(product => {
+
+
+        const category =
+        normalizeCategory(
+            product.category
+        );
+
+
+        const matchesCategory =
+        currentCategory === "all" ||
+        category ===
+        normalizeCategory(
+            currentCategory
+        );
+
+
+        const name =
+        String(
+            product.name || ""
+        ).toLowerCase();
+
+
+        const material =
+        String(
+            product.material || ""
+        ).toLowerCase();
+
+
+        const matchesSearch =
+        !search ||
+        name.includes(search) ||
+        material.includes(search) ||
+        category.includes(search);
+
+
+        return (
+            matchesCategory &&
+            matchesSearch
+        );
+
+    });
+
+
+    renderProducts(
+        filtered,
+        document.getElementById("products")
+    );
+
+}
+
+
+/* =====================================================
+   FILTER PRODUCTS
+===================================================== */
+
+function filterProducts(
+    category,
+    button=null
+){
+
+    currentCategory =
+    normalizeCategory(category);
+
+
+    if(button){
+
+        document
+        .querySelectorAll(".filter")
+        .forEach(
+            item =>
+            item.classList.remove("active")
+        );
+
+
+        button.classList.add("active");
+
+    }
+    else{
+
+        document
+        .querySelectorAll(".filter")
+        .forEach(item => {
+
+            item.classList.remove("active");
+
+            if(
+                normalizeCategory(
+                    item.innerText
+                ) ===
+                currentCategory
+            ){
+
+                item.classList.add("active");
+
+            }
+
+        });
+
+    }
+
+
+    document
+    .getElementById("collection")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+
+    applyFilters();
+
+}
+
+
+/* =====================================================
+   IMAGE VIEWER
+===================================================== */
+
+const viewer =
+document.getElementById("viewer");
+
+
+const viewerImage =
+document.getElementById("viewerImage");
+
+
+let scale = 1;
+
+let posX = 0;
+
+let posY = 0;
+
+let startX = 0;
+
+let startY = 0;
+
+let dragging = false;
+
+let lastDistance = 0;
+
+let lastTap = 0;
+
+
+function updateViewer(){
+
+    viewerImage.style.transform =
+    `
+    translate(${posX}px,${posY}px)
+    scale(${scale})
+    `;
+
+}
+
+
+function openViewer(image){
+
+    viewerImage.src = image;
+
+    scale = 1;
+
+    posX = 0;
+
+    posY = 0;
+
+    updateViewer();
+
+    viewer.classList.add("show");
+
+    document.body.style.overflow =
+    "hidden";
+
+}
+
+
+function closeViewer(event){
+
+    if(
+        event &&
+        event.target !== viewer &&
+        !event.target.classList.contains("close")
+    ){
+
+        return;
+
+    }
+
+
+    viewer.classList.remove("show");
+
+    document.body.style.overflow =
+    "";
+
+}
+
+
+/* =====================================================
+   DOUBLE TAP
+===================================================== */
+
+viewerImage.addEventListener(
+"touchend",
+function(event){
+
+    const now =
+    Date.now();
+
+
+    if(now - lastTap < 300){
+
+        if(scale === 1){
+
+            scale = 2;
+
+        }
+        else{
+
+            scale = 1;
+
+            posX = 0;
+
+            posY = 0;
+
+        }
+
+
+        updateViewer();
+
+        event.preventDefault();
+
+    }
+
+
+    lastTap = now;
+
+}
+);
+
+
+/* =====================================================
+   TOUCH ZOOM
+===================================================== */
+
+viewerImage.addEventListener(
+"touchstart",
+function(event){
+
+    if(event.touches.length === 1){
+
+        dragging = true;
+
+        startX =
+        event.touches[0].clientX - posX;
+
+        startY =
+        event.touches[0].clientY - posY;
+
+    }
+
+
+    if(event.touches.length === 2){
+
+        dragging = false;
+
+        lastDistance =
+        getDistance(
+            event.touches[0],
+            event.touches[1]
+        );
+
+    }
+
+},
+{
+    passive:false
+}
+);
+
+
+viewerImage.addEventListener(
+"touchmove",
+function(event){
+
+    event.preventDefault();
+
+
+    if(
+        event.touches.length === 2
+    ){
+
+        const distance =
+        getDistance(
+            event.touches[0],
+            event.touches[1]
+        );
+
+
+        if(lastDistance){
+
+            scale +=
+            (distance - lastDistance)
+            * .005;
+
+            scale =
+            Math.max(
+                1,
+                Math.min(4,scale)
+            );
+
+            updateViewer();
+
+        }
+
+
+        lastDistance =
+        distance;
+
+    }
+
+
+    if(
+        event.touches.length === 1 &&
+        dragging &&
+        scale > 1
+    ){
+
+        posX =
+        event.touches[0].clientX -
+        startX;
+
+        posY =
+        event.touches[0].clientY -
+        startY;
+
+        updateViewer();
+
+    }
+
+},
+{
+    passive:false
+}
+);
+
+
+viewerImage.addEventListener(
+"touchend",
+function(){
+
+    dragging = false;
+
+    lastDistance = 0;
+
+}
+);
+
+
+/* =====================================================
+   MOUSE DRAG
+===================================================== */
+
+viewerImage.addEventListener(
+"mousedown",
+function(event){
+
+    if(scale <= 1) return;
+
+    dragging = true;
+
+    startX =
+    event.clientX - posX;
+
+    startY =
+    event.clientY - posY;
+
+}
+);
+
+
+window.addEventListener(
+"mousemove",
+function(event){
+
+    if(
+        dragging &&
+        scale > 1
+    ){
+
+        posX =
+        event.clientX - startX;
+
+        posY =
+        event.clientY - startY;
+
+        updateViewer();
+
+    }
+
+}
+);
+
+
+window.addEventListener(
+"mouseup",
+function(){
+
+    dragging = false;
+
+}
+);
+
+
+/* =====================================================
+   MOUSE WHEEL ZOOM
+===================================================== */
+
+viewer.addEventListener(
+"wheel",
+function(event){
+
+    event.preventDefault();
+
+
+    scale +=
+    event.deltaY < 0
+    ? .2
+    : -.2;
+
+
+    scale =
+    Math.max(
+        1,
+        Math.min(4,scale)
+    );
+
+
+    updateViewer();
+
+},
+{
+    passive:false
+}
+);
+
+
+/* =====================================================
+   DISTANCE
+===================================================== */
+
+function getDistance(a,b){
+
+    const dx =
+    a.clientX - b.clientX;
+
+    const dy =
+    a.clientY - b.clientY;
+
+
+    return Math.sqrt(
+        dx * dx +
+        dy * dy
+    );
+
+}
+
+
+/* =====================================================
+   ESC KEY
+===================================================== */
+
+document.addEventListener(
+"keydown",
+function(event){
+
+    if(event.key === "Escape"){
+
+        closeViewer();
+
+    }
+
+}
+);
+
+
+/* =====================================================
+   START
+===================================================== */
+
+loadProducts();
+
+</script>
+
+
+</body>
+
+</html>
